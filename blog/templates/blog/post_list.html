@@ -1,9 +1,11 @@
 {% load static %}
 <html>
     <head>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <title> Jull's blog </title>
         <style>
-                html { background: tomato; }
+                html { background: white; }
             
                 body {
             
@@ -12,14 +14,18 @@
                 }
             
                 .fire {
+                    padding-top: 20px;
                   height: 400px;
                   width: 350px;
                 }
-              </style>
+        </style>
+
     </head>
     <body>
 
-        <h1>No me gusta piñera</h1>
+        <div class="header">
+                <h1><a href="">No me gusta piñera</a></h1>
+        </div>
         <img class="fire" src="{% static 'p_really_on_fire.jpeg' %}"> 
         
         
